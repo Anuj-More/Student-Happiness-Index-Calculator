@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 40px 1fr;
+    grid-template-areas:
+        "side header"
+        "side main";
+}
+.header{
+    background-color: #fff;
+    grid-area: header;
+}
+.sidebar{
+    background-color: #388e3c;
+    grid-area: side;
+}
+.main{
+    background-color: #c9c9c9;
+    padding: 25px;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 205.2px 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "c1 c2 c3"
+        "c4 c4 c5"
+        "c4 c4 c6"
+        "c4 c4 c7"
+        "c4 c4 c8";
+    gap: 20px;
+}
+.card{
+    background-color: #f6f7f9;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+}
+.card:nth-child(1){
+    grid-area: c1;
+}
+.card:nth-child(2){
+    grid-area: c2;
+}
+.card:nth-child(3){
+    grid-area: c3;
+}
+.card:nth-child(4){
+    grid-area: c4;
+}
+.card:nth-child(5){
+    grid-area: c5;
+}
+.card:nth-child(6){
+    grid-area: c6;
+}
+.card:nth-child(7){
+    grid-area: c7;
+}
+.card:nth-child(8){
+    grid-area: c8;
+}
+.navigation ul li:nth-child(1){
+    margin-bottom: 20px;
+    pointer-events: none;
+}
+.navigation ul li:hover{
+    background: #c9c9c9;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: #c9c9c9;
+}
+.navigation ul li:hover a{
+    color: #1c1f23;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 40px;
+    height: 40px;
+    line-height: 55px;
+    text-align: center;
+}
+.navigation ul li a .icon ion-icon
+{
+    font-size: 1.5em;
+}
+.navigation ul li a .title
+{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    text-align: start;
+    white-space: nowrap;
+}
+.header{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "to he";
+}
+.toggle{
+    display: flex;
+    font-size: 2em;
+    grid-area: to;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: he;
+}
+.heading p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+}
+.up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}

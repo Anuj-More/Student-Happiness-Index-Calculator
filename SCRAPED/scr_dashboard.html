@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="scr_ovr_styles.css">
+</head>
+<body>
+    <!-- <?php
+    
+    require 'partials/_dbconnect.php';
+    
+    ?> -->
+
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <span class="title">Overall</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ce.html">
+                        <span class="title">Computer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="it.html">
+                        <span class="title">Information Technology</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="extc.html">
+                        <span class="title">Electronics & Telecommunication</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="in.html">
+                        <span class="title">Instrumentation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ec.html">
+                        <span class="title">Electronics & Computer</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+
+        let list = document.querySelectorAll('.navigation li');
+        function activeLink(link){
+            list.forEach((item) => 
+                item.classList.remove('hovered'));
+            link.classList.add('hovered');
+        }
+
+        list.forEach((item) => {
+            item.addEventListener('mouseover', function() {
+                activeLink(this);
+            });
+            item.addEventListener('click', function() {
+                activeLink(this);
+        });
+    });
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

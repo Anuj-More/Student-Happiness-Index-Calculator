@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Happiness Index</title>
+	<style>
+		.container {
+			display: flex;
+			justify-content: center;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+			border-radius: 10px;
+			padding: 10px;
+			width: 350px;
+			margin: auto;
+		}
+
+		.card {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			border-radius: 5px;
+			padding: 10px;
+			margin: 5px;
+			flex: 1;
+			height: 80px;
+		}
+
+		.card:hover {
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+		}
+
+		h1 {
+			margin-top: 50px;
+			text-align: center;
+			font-size: 36px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Happiness Index</h1>
+	<div class="container">
+		<div class="card" onclick="window.location.href='form.php'">
+			<h2>Survey Form</h2>
+		</div>
+		<div class="card" onclick="window.location.href='adminlogin.php'">
+			<h2>Admin Login</h2>
+		</div>
+	</div>
+</body>
+
+</html>
